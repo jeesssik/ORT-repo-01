@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 mongoose.connect(
-  "mongodb+srv://jess:asd@cluster0.mxdd7.mongodb.net/?retryWrites=true&w=majority",
+  "mongodb+srv://jess:@cluster0.mxdd7.mongodb.net/?retryWrites=true&w=majority",
   
   err => {
     if(err) throw err;
