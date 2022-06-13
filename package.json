@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jmguillen76/ortrepo01#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "react": "^18.1.0"
   }
 }
