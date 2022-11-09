@@ -1,0 +1,184 @@
+<html>
+    <head>
+
+    </head>
+<body>
+    <script>
+
+        // Las variables del tipo var son de scope (ámbito) de función
+/*
+        var a = 1;
+
+        function mensaje(a){
+            var b = 2;
+            return a+b
+        }
+
+        console.log("El resultado de la cuenta de la funcion es: ", mensaje(a))
+        console.log("a vale: ",a)
+        //console.log("b fuera de la función vale: ", b)
+
+*/
+        console.log("-----------------------------------")
+        // así mismo si ya tengo una variable global y le reasigno un valor dentro de
+        //una funcion, ese valor solo es válido dentro de ese bloque
+
+/*       
+
+        var a = 1;
+
+        function mensaje2(a){
+            var a= 3;
+            var b = 2;
+            console.log("A dentro de la función vale: ", a)
+        }
+
+        mensaje2(a)
+        console.log("a fuera de la función vale: ", a)
+*/
+
+
+        //En ES6 las variables de tipo var se reemplazan por 
+        //las variables del tipo let
+
+        //las variables de tipo let son de scope de bloque
+/*
+        let x = "hola"
+
+        if(true){
+            let z= "chao"
+            console.log(z)
+        }
+        console.log(z)
+*/
+
+        //estados de una variable
+
+        //declaración
+/*
+        let v
+
+        //inicialización
+
+        let r = "soy una variable"
+
+        //asignación
+
+        v=9
+
+        //re-asignación
+
+        r= 34
+*/
+
+        // Literal String
+
+        //Es la nueva forma de crear strings con las comillas invertidas
+        //Nos permite crear strings de más de una línea, y es más útil
+        //para cuando tenemos un string con varias variables en medio del texto
+/*
+        let ejemplo1=`texto de cadena de caracteres`
+        let ejemplo2=`línea 1 de la cadena de caracteres
+                      línea 2 de la cadena de caracteres`
+
+        let ejemplo3=`texto de cadena${b} de caracteres ${a} texto ${c} adicional`
+*/
+
+        // default parameters
+
+/*
+        function saludar(nombre = 'Pepe', apellido = 'Perez') {
+            console.log(`hola ${nombre} ${apellido}!!`);
+            }
+
+            saludar(); // hola Pepe Perez!!
+            saludar('Jorge'); // hola Jorge Perez!!
+            saludar('Jorge', 'Gomez'); // hola Jorge Gomez!!
+
+*/
+        //intercambio de valor de variables
+/*
+        let a = 1;
+        let b = 3;
+
+        [a, b] = [b, a];
+        console.log(a); // 3
+        console.log(b); // 1
+*/
+
+
+    // -----------Arrow Function----------------
+/*
+    // Función tradicional
+    function (a){
+    return a + 100;
+    }
+
+    // Desglose de la función flecha
+
+    // 1. Elimina la palabra "function" y coloca la flecha entre el argumento y el corchete de apertura.
+    (a) => {
+    return a + 100;
+    }
+
+    // 2. Quita los corchetes del cuerpo y la palabra "return" — el return está implícito.
+    (a) => a + 100;
+
+    // 3. Suprime los paréntesis de los argumentos
+    a => a + 100;
+
+
+    ///si tienes varios argumentos o ningún argumento, 
+    //deberás volver a introducir paréntesis alrededor de 
+    //los argumentos:
+
+    +// Función tradicional
+    function (a, b){
+    return a + b + 100;
+    }
+
+    // Función flecha
+    (a, b) => a + b + 100;
+
+    // Función tradicional (sin argumentos)
+    let a = 4;
+    let b = 2;
+    function (){
+    return a + b + 100;
+    }
+
+    // Función flecha (sin argumentos)
+    let a = 4;
+    let b = 2;
+    () => a + b + 100;
+
+    //// si el cuerpo requiere líneas de procesamiento adicionales, 
+    //deberás volver a introducir los corchetes Más el "return"
+
+    // Función tradicional
+    function (a, b){
+    let chuck = 42;
+    return a + b + chuck;
+    }
+
+    // Función flecha
+    (a, b) => {
+    let chuck = 42;
+    return a + b + chuck;
+    }
+
+    //Y finalmente, en las funciones con nombre tratamos 
+    //las expresiones de flecha como variables
+
+
+    function bob (a){
+    return a + 100;
+    }
+
+    // Función flecha
+    let bob = a => a + 100;
+
+*/
+    </script>
+</body>
+    </html>
